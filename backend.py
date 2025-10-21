@@ -12,7 +12,7 @@ import spacy
 # =====================================================
 # 🔧 CONFIG
 # =====================================================
-SERPAPI_API_KEY = "30a4cacbd98efb447aadd929f0f46001424f8a5073d83be1e3f32474d2e70ac3"
+SERPAPI_API_KEY = "<Your SerpAPI API key>"
 OLLAMA_MODEL = "llama3.2"
 OLLAMA_URL = "http://localhost:11434/api/generate"
 
@@ -544,3 +544,4 @@ def search():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
