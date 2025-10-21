@@ -1,0 +1,1 @@
+streamlit serpapi trafilatura beautifulsoup4 streamlit-javascript

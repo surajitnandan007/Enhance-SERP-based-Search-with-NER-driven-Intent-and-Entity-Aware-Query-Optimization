@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🗺️ AI News & Local Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>🗺️ AI News & Local Search</h1>
+
+    <div class="card">
+      <label for="query">Your query</label>
+      <input id="query" type="text" placeholder="e.g., restaurants near me, latest AI news" />
+      <button id="go">Search</button>
+    </div>
+
+    <div id="locStatus" class="info">Waiting for browser location…</div>
+
+    <div id="result" class="card"></div>
+    <!--div id="debug" class="debug"></div-->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
