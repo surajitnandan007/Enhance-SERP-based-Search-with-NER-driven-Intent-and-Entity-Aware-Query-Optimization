@@ -33,6 +33,29 @@ This application dynamically determines whether to perform **local map searches 
 - Uses model caching (`@lru_cache`), parallel text extraction (`ThreadPoolExecutor`), and lazy model loading.
 
 ---
+## ⚙️ Setup Instructions
+1️⃣ **Create environment**
+  - python -m venv venv
+  - source venv/bin/activate  # or venv\Scripts\activate (Windows)
+
+2️⃣  **Install dependencies**
+  - pip install -r requirements.txt
+
+3️⃣  **Download spaCy model**
+  - python -m spacy download en_core_web_sm
+
+4️⃣  **(Optional) Install Playwright for Cloudflare-protected sites**
+  - pip install playwright
+  - playwright install chromium
+
+6️⃣ **API key generation and placement**
+-Generate SepAPI API key and place the key at placeholder
+ - SERPAPI_API_KEY = "< Your SerpAPI API key >"
+
+5️⃣  **Run the backend**
+  - python backend.py
+
+---
 
 ## 🧩 Architecture Overview
 
@@ -49,3 +72,4 @@ G -->|News/General| I[Google Search API]
 H --> J[Digest Summarization]
 I --> J
 J --> K[Frontend UI Display]
+
