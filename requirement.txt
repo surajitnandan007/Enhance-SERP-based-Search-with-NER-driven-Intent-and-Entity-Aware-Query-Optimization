@@ -1,1 +1,62 @@
-streamlit serpapi trafilatura beautifulsoup4 streamlit-javascript
+# ==========================
+# Core Web Framework
+# ==========================
+Flask==3.0.3
+Flask-Cors==4.0.1
+
+# ==========================
+# NLP & Embeddings
+# ==========================
+spacy==3.7.5
+sentence-transformers==3.1.1
+transformers>=4.42.3
+torch>=2.3.0
+numpy<2.0
+scipy>=1.11.4
+
+# ==========================
+# Web Requests & Parsing
+# ==========================
+requests==2.31.0
+beautifulsoup4==4.12.3
+trafilatura==1.8.2
+urllib3==2.2.2
+
+# ==========================
+# Search API (Google/SerpAPI)
+# ==========================
+google-search-results==2.4.2
+
+# ==========================
+# HTML Rendering (Optional)
+# ==========================
+Jinja2>=3.1.3
+
+# ==========================
+# Async / Parallel Processing
+# ==========================
+concurrent-log-handler>=0.9.25
+futures; python_version < "3.9"
+
+# ==========================
+# Playwright (Optional - JS Rendering / Cloudflare Bypass)
+# Install only if you want Cloudflare support
+# ==========================
+playwright==1.47.0
+
+# ==========================
+# Text & Summarization Utilities
+# ==========================
+nltk==3.9.1
+
+# ==========================
+# Optional: Fast Performance
+# ==========================
+tqdm>=4.66.4
+regex>=2024.5.10
+joblib>=1.4.2
+
+# ==========================
+# Development & Debugging
+# ==========================
+python-dotenv>=1.0.1
