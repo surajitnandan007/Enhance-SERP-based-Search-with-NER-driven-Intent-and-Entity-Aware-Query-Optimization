@@ -9,7 +9,7 @@ This application dynamically determines whether to perform **local map searches 
 ## 🚀 Features
 
 ✅ **Intent-aware search**
-- Classifies user intent (`GetNews`, `FindLocation`, `GetWeather`, `GetProductPrice`) via sentence-transformer embeddings.  
+- Classifies user intent (`GetNews` or `FindLocation`) via sentence-transformer embeddings.  
 
 ✅ **Entity-driven reasoning (NER)**
 - Detects **location**, **date**, **organization**, and **product** entities to refine query context.
