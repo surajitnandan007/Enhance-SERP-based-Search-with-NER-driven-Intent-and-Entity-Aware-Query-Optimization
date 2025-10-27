@@ -17,13 +17,13 @@ This application dynamically determines whether to perform **local map searches 
 ✅ **Temporal inference**
 - Extracts and normalizes time expressions (e.g., “today”, “last month”, “2024”) for SerpAPI’s `tbs` filters.
 
-✅ **LLM-based query rewriting**
-- Uses **LLaMA (via Ollama)** to generate single-line, concise, keyword-rich search queries.
+✅ **Query rewriting with Context Engineering**
+- Uses Context Engineering powered by **LLaMA (via Ollama)** to generate single-line, concise, keyword-rich search queries.
 
 ✅ **Automatic geolocation**
 - Uses browser GPS or IP geolocation; falls back to NER-based location geocoding if unavailable.
 
-✅ **Article summarization**
+✅ **Article summarization with Context Engineering**
 - Extracts and summarizes article content using LLMs with relevance weighting and entropy-based length control.
 
 ✅ **Multi-layer text extraction**
@@ -64,12 +64,12 @@ graph TD
 A[User Query] --> B[NER + Entity Extraction]
 B --> C[Intent Detection by MiniLM Embeddings]
 C --> D[Temporal Context Inference]
-D --> E[LLM Query Optimization]
+D --> E[Query Optimization with Context Engineering]
 E --> F[SerpAPI Search Engine]
 F --> G{Search Type?}
 G -->|Maps| H[geo-aware with Google Maps API]
 G -->|News/General| I[Google Search API]
-H --> J[Digest Summarization]
+H --> J[Digest Summarization with Context Engineering]
 I --> J
 J --> K[Frontend UI Display]
 
